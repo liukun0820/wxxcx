@@ -17,6 +17,13 @@ Page({
       url: '../logs/logs'
     })
   },
+  changeName: function(e) {
+    // sent data change to view
+    //console.log("12334")
+    this.setData({
+      motto: 'MINA'
+    })
+  },
   onLoad() {
     if (wx.getUserProfile) {
       this.setData({

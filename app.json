@@ -4,7 +4,10 @@
     "pages/logs/logs",
     "pages/page2/page2"
   ],
+  "entryPagePath": "pages/index/index",
+  "debug":false,
   "tabBar": {
+    "position":"bottom",
     "list": [{
       "pagePath": "pages/index/index",
       "text": "首页"
