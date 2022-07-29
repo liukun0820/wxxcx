@@ -43,6 +43,27 @@ Page({
   onUnload:function(){
     // 页面关闭
   },
+  onPullDownRefresh: function() {
+    // 触发下拉刷新时执行
+  },
+  onReachBottom: function() {
+    // 页面触底时执行
+  },
+  onShareAppMessage: function () {
+    // 页面被用户分享时执行
+  },
+  onPageScroll: function() {
+    // 页面滚动时执行
+  },
+  onResize: function() {
+    // 页面尺寸变化时执行
+  },
+  onTabItemTap(item) {
+    // tab 点击时执行
+    console.log(item.index)
+    console.log(item.pagePath)
+    console.log(item.text)
+  },
   getUserProfile(e) {
     // 推荐使用wx.getUserProfile获取用户信息，开发者每次通过该接口获取用户个人信息均需用户确认，开发者妥善保管用户快速填写的头像昵称，避免重复弹窗
     wx.getUserProfile({

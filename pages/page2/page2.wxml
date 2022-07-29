@@ -1,2 +1,7 @@
 <!--pages/page2/page2.wxml-->
-<text>pages/page2/page2.wxml</text>
+<!--<text>pages/page2/page2.wxml</text>-->
+<view class="container">
+  <text class="title" wx:for="{{items}}">
+    索引：{{index}}，内容：{{item}}
+  </text>
+</view>

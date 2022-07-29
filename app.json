@@ -10,10 +10,14 @@
     "position":"bottom",
     "list": [{
       "pagePath": "pages/index/index",
-      "text": "首页"
+      "text": "首页",
+      "iconPath": "images/burger.png",
+      "selectedIconPath":"images/burger_focus.png"
     }, {
       "pagePath": "pages/page2/page2",
-      "text": "page2"
+      "text": "page2",
+      "iconPath": "images/chat.png",
+      "selectedIconPath": "images/chat_focus.png"
     }]
   },
   "window": {
