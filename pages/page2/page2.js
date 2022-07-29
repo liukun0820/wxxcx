@@ -5,14 +5,20 @@ Page({
    * 页面的初始数据
    */
   data: {
-    items:['第一项','第二项','第三项']
+    /*items:['第一项','第二项','第三项']*/
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    const that = this;
+    wx.request({
+      url: 'http://127.0.0.6/api/index',
+      success(res) {
+        that.setData({ items: res.data });
+      }
+    });
   },
 
   /**
